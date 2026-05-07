@@ -5,21 +5,21 @@
 class AgentGate < Formula
   desc "Single-user audit gate for AI agent HTTPS traffic"
   homepage "https://github.com/WZ/agent-gate"
-  version "0.3.2"
+  version "0.3.3"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/WZ/agent-gate/releases/download/v0.3.2/agent-gate_0.3.2_darwin_x86_64.tar.gz"
-      sha256 "ae5a8f3cee8f85b6b27bf7a05b8f2d18e9035dbffdf6622376e12b3a3c353c53"
+      url "https://github.com/WZ/agent-gate/releases/download/v0.3.3/agent-gate_0.3.3_darwin_x86_64.tar.gz"
+      sha256 "993eb66291297c475a6db7e5e894f47b3b37496ad760665071ec22193331cdd8"
 
       define_method(:install) do
         bin.install "agent-gate"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/WZ/agent-gate/releases/download/v0.3.2/agent-gate_0.3.2_darwin_arm64.tar.gz"
-      sha256 "a7d2ab37fbb4985d3fc001c62119334342c95bb6f4abc15f6bb7206cfc050435"
+      url "https://github.com/WZ/agent-gate/releases/download/v0.3.3/agent-gate_0.3.3_darwin_arm64.tar.gz"
+      sha256 "eddc186fd8df640191e6f43930827a83362a50671c85339c8e28f1f4f178f635"
 
       define_method(:install) do
         bin.install "agent-gate"
@@ -29,15 +29,15 @@ class AgentGate < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/WZ/agent-gate/releases/download/v0.3.2/agent-gate_0.3.2_linux_x86_64.tar.gz"
-      sha256 "9c9a657681c87965db9b03a98b6c2a619580c23902cf43f54715d50a59130f08"
+      url "https://github.com/WZ/agent-gate/releases/download/v0.3.3/agent-gate_0.3.3_linux_x86_64.tar.gz"
+      sha256 "9f1d9f5ec2d41f5a05833b2a23bc094ae81ba94cdc2acef1c65d33bf71992d0c"
       define_method(:install) do
         bin.install "agent-gate"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/WZ/agent-gate/releases/download/v0.3.2/agent-gate_0.3.2_linux_arm64.tar.gz"
-      sha256 "e5241f7f04f4768304bb048c4adc7dd530b0efa1c37d5d026e129bf6fe9bd259"
+      url "https://github.com/WZ/agent-gate/releases/download/v0.3.3/agent-gate_0.3.3_linux_arm64.tar.gz"
+      sha256 "fc7b5f1546e2751f6216950507a5ae231262ff513c4c6336ba77315f442cb6fa"
       define_method(:install) do
         bin.install "agent-gate"
       end
